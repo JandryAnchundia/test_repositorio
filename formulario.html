@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Ejercicio DOM, eventos y funciones</title>
+    <script type="text/javascript" src="JS/32_ejercicio_dom.js"></script>
+
+
+    <style type="text/css">
+
+     .box{
+      float: left;
+      width: 250px;
+      height: 250px;
+      margin: 20px;
+     }
+
+     .cuadro{
+
+         border: 2px dashed black;
+         width: 240px;
+     }
+    
+  
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!--
+     1. Formulario campos: Nombre, apellidos, edad.
+     2. Bton de enviar los formularios: eventos submit
+     3. Mostrar datos de pantalla
+     4. Validacion del formulario
+    -->
+    <h1>Ejercicio DOM, eventos y funciones - JavaScript</h1>
+
+    <div class="box">
+
+        <form action="#" method="POST" id="formulario" onsubmit="return false">
+            <label for="nombre">Nombre: </label> <br>
+            <input type="text" name="nombre" id="nombre"> <br>
+            <span id="error"></span>
+            <label for="apellidos">Apellidos: </label><br>
+            <input type="text" name="apellidos" id="apellidos">
+            <br>
+            <label for="edad">Edad: </label><br>
+            <input type="number" name="edad" id="edad">
+            <br>
+            <br>
+            <input type="submit" value="enviar" id="enviar">
+
+        </form>
+    </div>
+
+    <div  class="box cuadro">
+
+        <p id="nombre">Nombre: <span></span></p> 
+        <p id="apellidos">Apellidos: <span></span></p>
+        <p id="edad">Edad: <span></span> </p>
+
+
+        
+    
+
+
+    </div>
+
+</body>
+
+</html>
